@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bw30rjhvi5xyn"]
+
+[ext_resource type="Script" uid="uid://x24obd00uk03" path="res://objects/characters/lady.gd" id="1_jsh64"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_2cnu1"]
+radius = 0.34277344
+height = 1.69
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2cnu1"]
+radius = 0.343
+height = 1.69
+
+[node name="lady" type="CharacterBody3D" unique_id=1200321102]
+script = ExtResource("1_jsh64")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=893825739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.845, 0)
+mesh = SubResource("CapsuleMesh_2cnu1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=879771879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.845, 0)
+shape = SubResource("CapsuleShape3D_2cnu1")
