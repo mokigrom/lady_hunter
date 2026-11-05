@@ -16,6 +16,7 @@ settings/startup_visibility=1
 
 config/name="Lady Hunter: The Dimension Breaker"
 config/version="1.0.0"
+config/tags=PackedStringArray("3d", "game_jam", "gdscript")
 run/main_scene="uid://dtb0stdstsgh"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="Lady Hunter"
