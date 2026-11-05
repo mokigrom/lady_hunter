@@ -16,14 +16,15 @@ uv1_triplanar = true
 environment = ExtResource("1_im37l")
 
 [node name="floor" type="CSGBox3D" parent="." unique_id=321977679]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3299029, 0.44900155, 0.7776532)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.449, 0)
 cast_shadow = 0
 use_collision = true
 size = Vector3(110.70801, 0.4494629, 124.5459)
 material = SubResource("StandardMaterial3D_kobp4")
 
-[node name="lady" parent="." unique_id=1200321102 instance=ExtResource("3_h8avn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23168606, 0)
+[node name="lady" parent="." unique_id=1200321102 node_paths=PackedStringArray("camera") instance=ExtResource("3_h8avn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6748988, 0)
+camera = NodePath("../camera")
 
 [node name="camera" type="Camera3D" parent="." unique_id=254202019]
 transform = Transform3D(1, 0, 0, 0, 0.34202015, 0.9396926, 0, -0.9396926, 0.34202015, 0, 10.633507, 3.6946392)

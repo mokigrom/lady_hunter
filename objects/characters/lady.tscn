@@ -13,10 +13,16 @@ height = 1.69
 [node name="lady" type="CharacterBody3D" unique_id=1200321102]
 script = ExtResource("1_jsh64")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=893825739]
+[node name="model" type="MeshInstance3D" parent="." unique_id=893825739]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.845, 0)
 mesh = SubResource("CapsuleMesh_2cnu1")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=879771879]
+[node name="collision" type="CollisionShape3D" parent="." unique_id=879771879]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.845, 0)
 shape = SubResource("CapsuleShape3D_2cnu1")
+
+[node name="camera_look_target" type="Marker3D" parent="." unique_id=826992883]
+transform = Transform3D(1, 0, 0, 0, 0.9408808, -0.3387379, 0, 0.3387379, 0.9408808, 0, 0, 0)
+
+[node name="camera_position" type="Marker3D" parent="camera_look_target" unique_id=975014286]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 10.634, 0)
