@@ -1,6 +1,6 @@
 # Lady Hunter: The Dimension Breaker
 
-<p style="text-align: left;">
+<p style="text-align: center;">
     <img src="assets/logo/logo.png" style="width: 640px;" alt="Logo">
 </p>
 
