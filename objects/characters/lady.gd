@@ -8,13 +8,15 @@ const HEIGHT: float = 1.69
 
 @export var camera: Camera3D
 @export var camera_follow_speed: float = 4.0
+@export var camera_distance: float = 10.634
+
 var is_camera_following: bool = true
 
-@onready var camera_look_target = $camera_look_target
-@onready var camera_position = $camera_look_target/camera_position
+@onready var camera_look_target: Marker3D = $camera_look_target
+@onready var camera_position: Marker3D = $camera_look_target/camera_position
 
 func _ready() -> void:
-	camera.rotation = Vector3(-90, 0, 0)
+	camera_look_target.position.y = HEIGHT / 2
 
 func _process(delta: float) -> void:
 	if is_camera_following:

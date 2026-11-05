@@ -27,7 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6748988, 0)
 camera = NodePath("../camera")
 
 [node name="camera" type="Camera3D" parent="." unique_id=254202019]
-transform = Transform3D(1, 0, 0, 0, 0.34202015, 0.9396926, 0, -0.9396926, 0.34202015, 0, 10.633507, 3.6946392)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 10)
 current = true
 
 [node name="direction_light" type="DirectionalLight3D" parent="." unique_id=1182222713]
