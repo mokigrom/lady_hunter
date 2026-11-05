@@ -8,9 +8,14 @@
 
 config_version=5
 
+[DebugMenu]
+
+settings/startup_visibility=1
+
 [application]
 
 config/name="Lady Hunter: The Dimension Breaker"
+config/version="1.0.0"
 run/main_scene="uid://dtb0stdstsgh"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="Lady Hunter"
@@ -20,12 +25,20 @@ boot_splash/stretch_mode=0
 boot_splash/image="uid://dg65gp5jhtui2"
 config/icon="res://icon.svg"
 
+[autoload]
+
+DebugMenu="*uid://cggqb75a8w8r"
+
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg")
 
 [input]
 
